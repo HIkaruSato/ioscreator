@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E23D5EDD1E2E45B000A6225D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23D5EDC1E2E45B000A6225D /* AppDelegate.swift */; };
-		E23D5EDF1E2E45B000A6225D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23D5EDE1E2E45B000A6225D /* ViewController.swift */; };
+		E23D5EDF1E2E45B000A6225D /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23D5EDE1E2E45B000A6225D /* PhotoViewController.swift */; };
 		E23D5EE21E2E45B000A6225D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E23D5EE01E2E45B000A6225D /* Main.storyboard */; };
 		E23D5EE41E2E45B000A6225D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E23D5EE31E2E45B000A6225D /* Assets.xcassets */; };
 		E23D5EE71E2E45B000A6225D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E23D5EE51E2E45B000A6225D /* LaunchScreen.storyboard */; };
@@ -18,7 +18,7 @@
 /* Begin PBXFileReference section */
 		E23D5ED91E2E45AF00A6225D /* IOS10ScaleImagesTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOS10ScaleImagesTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E23D5EDC1E2E45B000A6225D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E23D5EDE1E2E45B000A6225D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E23D5EDE1E2E45B000A6225D /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		E23D5EE11E2E45B000A6225D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E23D5EE31E2E45B000A6225D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E23D5EE61E2E45B000A6225D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,7 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				E23D5EDC1E2E45B000A6225D /* AppDelegate.swift */,
-				E23D5EDE1E2E45B000A6225D /* ViewController.swift */,
+				E23D5EDE1E2E45B000A6225D /* PhotoViewController.swift */,
 				E23D5EE01E2E45B000A6225D /* Main.storyboard */,
 				E23D5EEE1E2E46AE00A6225D /* bunny.png */,
 				E23D5EE31E2E45B000A6225D /* Assets.xcassets */,
@@ -94,12 +94,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Arthur Knopper";
 				TargetAttributes = {
 					E23D5ED81E2E45AF00A6225D = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = Z5DP89AMR6;
+						DevelopmentTeam = 6SL8ZQ8F72;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -141,7 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E23D5EDF1E2E45B000A6225D /* ViewController.swift in Sources */,
+				E23D5EDF1E2E45B000A6225D /* PhotoViewController.swift in Sources */,
 				E23D5EDD1E2E45B000A6225D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -177,7 +177,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -185,7 +187,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -226,7 +232,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -234,7 +242,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -263,12 +275,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Z5DP89AMR6;
+				DEVELOPMENT_TEAM = 6SL8ZQ8F72;
 				INFOPLIST_FILE = IOS10ScaleImagesTutorial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ioscreator.IOS10ScaleImagesTutorial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -276,12 +288,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Z5DP89AMR6;
+				DEVELOPMENT_TEAM = 6SL8ZQ8F72;
 				INFOPLIST_FILE = IOS10ScaleImagesTutorial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ioscreator.IOS10ScaleImagesTutorial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -304,6 +316,7 @@
 				E23D5EED1E2E45B000A6225D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

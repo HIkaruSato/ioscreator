@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Photo View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IOS10ScaleImagesTutorial" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="PhotoViewController" customModule="IOS10ScaleImagesTutorial" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -25,21 +25,29 @@
                                 <rect key="frame" x="137" y="184" width="100" height="110"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="lib-Bc-sWh" appends="YES" id="eVQ-GV-Xv8"/>
-                                </connections>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="lib-Bc-sWh" appends="YES" id="PPF-mQ-jvL"/>
+                            <outletCollection property="gestureRecognizers" destination="mCc-9B-hrv" appends="YES" id="5BC-zh-0rd"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="myImageView" destination="6Mq-ik-i4F" id="hev-xx-MTD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="mCc-9B-hrv">
+                    <connections>
+                        <action selector="doubleTapImage:" destination="BYZ-38-t0r" id="yc7-nT-Cc6"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="jh4-vj-vmX"/>
+                    </connections>
+                </tapGestureRecognizer>
                 <pinchGestureRecognizer id="lib-Bc-sWh">
                     <connections>
                         <action selector="scaleImage:" destination="BYZ-38-t0r" id="Cvp-rM-5d7"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="eY4-bn-HE8"/>
                     </connections>
                 </pinchGestureRecognizer>
             </objects>
